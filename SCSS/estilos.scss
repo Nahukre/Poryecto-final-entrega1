@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-verde: #03a00b;
+$color-celeste: #0483a3;
+@media only screen and (min-width: 1024px) {
+    .encabezado {
+        /* esta clase corresponde al encabezado*/
+        background-color: $color-verde;
+        font-weight: bold;
+        font-family: sans-serif;
+        top: 0;
+        left: 0;
+        z-index: 1010;
+        display: flex;
+        width: 100%;
+        // position: absolute;
+        z-index: 100;
+        text-align: center;
+    }
+    .encabezado__logo {
+        width: 120px;
+        height: 120px;
+        margin: 5px;
+        margin-left: 20%;
+        padding-bottom: 8px;
+        transform: rotate(-15deg);
+    }
+    .encabezado__nombre {
+        color: $color-celeste;
+        font-size: 43px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: "Dela Gothic One", cursive;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .encabezado__subnombre {
+        color: $color-celeste;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 0;
+        margin-left: 43px;
+        font-family: "Dela Gothic One", cursive;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        word-spacing: 10px;
+    }
+    .menu__items--font {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        background-color: $color-celeste;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-right: 15px;
+        width: 100%;
+        text-align: right;
+        border-width: 2px;
+        border-bottom: solid;
+        border-top: solid;
+        border-color: black;
+        position: sticky;
+        margin-bottom: -10px;
+    }
+    ul.menu__items--font li {
+        color: black;
+        position: relative;
+        margin-left: 5px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        border: solid;
+        border-color: black;
+        padding: 2px;
+        border-radius: 5px;
+        background-color: $color-verde;
+        &:hover {
+            background-color: $color-celeste;
+            border: solid;
+            border-color: black;
+            border-width: 2px;
+            border-radius: 5px;
+            color: $color-verde;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+    }
+    li {
+        position: relative;
+        display: inline-block;
+        &:hover {
+            color: $color-verde;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+    }
+    a {
+        /* esta etiqueta corresponde a los link dentro del menu*/
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color: $color-verde;
+            text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+        }
+    }
+    .pagina {
+        /* esta clase corresponde al index */
+        background-image: url(../img/inversion.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        width: 100%;
+        min-height: 700px;
+        font-family: sans-serif;
+        padding-top: 40px;
+        &:before {
+            content: "";
+            margin-top: -30px;
+            width: 100%;
+            height: 690px;
+            background-color: green;
+            position: absolute;
+            opacity: 0.3;
+        }
+    }
+    .carousel-inner {
+        display: block;
+        margin: auto;
+        width: 60%;
+        border-radius: 5px;
+        border-width: 3px;
+        border: solid;
+        border-color: $color-celeste;
+    }
+    .carousel-indicators {
+        margin: auto;
+    }
+    .carousel-control-prev {
+        width: 50%;
+        color: $color-celeste;
+    }
+    .carousel-control-next {
+        width: 50%;
+        color: $color-celeste;
+    }
+}
